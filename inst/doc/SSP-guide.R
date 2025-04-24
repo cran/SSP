@@ -1,4 +1,4 @@
-## ----setup, include = FALSE----------------------------------------------
+## ----setup, include = FALSE---------------------------------------------------
 library(SSP)
 library(ggplot2)
 
@@ -13,7 +13,7 @@ knitr::opts_chunk$set(
   message = FALSE
 )
 
-## ----eval=FALSE----------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------------------
 #  library(SSP)
 #  data(micromollusk)
 #  
@@ -39,10 +39,10 @@ knitr::opts_chunk$set(
 #  fig.1 <- plot_ssp(xx = sum.mic, opt = opt.mic, multi.site = FALSE)
 #  fig.1
 
-## ---- echo = FALSE, out.width='100%', fig.align='center', fig.cap='Fig. 1. MultSE and sampling effort relationship using micromollusk simulated data'----
+## ----echo = FALSE, out.width='100%', fig.align='center', fig.cap='Fig. 1. MultSE and sampling effort relationship using micromollusk simulated data'----
 knitr::include_graphics('fig1.png')
 
-## ----eval=FALSE----------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------------------
 #  data(sponges)
 #  
 #  #Estimation of parameters
@@ -70,10 +70,10 @@ knitr::include_graphics('fig1.png')
 #  fig.2
 #  
 
-## ---- echo = FALSE, out.width='100%', fig.align='center', fig.cap='Fig. 2. MultSE and sampling effort relationship using sponge simulated data'----
+## ----echo = FALSE, out.width='100%', fig.align='center', fig.cap='Fig. 2. MultSE and sampling effort relationship using sponge simulated data'----
 knitr::include_graphics('fig2.png')
 
-## ------------------------------------------------------------------------
+## -----------------------------------------------------------------------------
 dat<-sponges[,2:length(sponges)]
 
 #Square root transformation of abundances
